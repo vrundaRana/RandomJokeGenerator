@@ -64,12 +64,13 @@
   <h1
     class="text-6xl font-extrabold text-center m-4 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 drop-shadow-lg"
   >
-    <span class="text-black">🤣</span> Laugh <span class="text-white">Out</span>
-    Loud! <span class="text-black">🤣</span>
+    <span class="text-black wiggle">🤣</span> Laugh
+    <span class="text-white">Out</span>
+    Loud! <span class="text-black wiggle">🤣</span>
   </h1>
 
   <div
-    class="flex justify-center flex-col p-8 m-4 bg-white/10 backdrop-blur-md w-full max-w-3xl rounded-2xl shadow-2xl border border-white/20 hover:shadow-purple-500/30 transition-all duration-300 transform"
+    class="flex justify-center flex-col p-8 m-4 bg-white/10 backdrop-blur-md w-full max-w-3xl rounded-2xl shadow-2xl border border-white/20 hover:shadow-purple-500/30 transition-all duration-300 transform font-['FingerPaint']"
   >
     {#if jokeType === "single"}
       <p class="text-2xl font-bold text-center leading-relaxed">{joke}</p>
@@ -91,8 +92,32 @@
       Get Another Joke
     </button>
 
-    <p class="text-sm text-white/60 text-center mt-4 italic">
+    <p class="text-sm text-white text-center mt-4 italic">
       Psst... laughing out loud might unlock something fun. 😉
     </p>
   </div>
 </main>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+  h1 {
+    font-family: 'Finger Paint', cursive;
+  }
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-20deg);
+    }
+  }
+  .wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+    display: inline-block;
+  }
+</style>
