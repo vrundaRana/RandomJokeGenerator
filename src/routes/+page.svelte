@@ -50,7 +50,9 @@
       confettiNumber: 500,
     });
   }
-
+function getHint(){
+  alert("💡 Hint: Try typing LOL on your keyboard!")
+}
   onMount(() => {
     jsConfetti = new JSConfetti();
     window.addEventListener("keydown", handleKey);
@@ -81,12 +83,12 @@
       </p>
     {:else}
       <p class="text-2xl font-bold text-center leading-relaxed">
-        Click the button to get a joke!
+        Loading...
       </p>
     {/if}
 
     <button
-      class="mt-8 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 mx-auto cursor-pointer"
+      class="mt-8 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 mx-auto cursor-pointer focus:outline-none focus:ring-0"
       on:click={getJoke}
     >
       Get Another Joke
@@ -95,6 +97,9 @@
     <p class="text-sm text-white text-center mt-4 italic">
       Psst... laughing out loud might unlock something fun. 😉
     </p>
+    <button class="mt-6 px-3 py-1 text-sm bg-pink-500/30 hover:bg-pink-600/30 text-white rounded-full shadow w-fit mx-auto transition duration-200 cursor-pointer" on:click={getHint}>Hint</button>
+
+
   </div>
 </main>
 
