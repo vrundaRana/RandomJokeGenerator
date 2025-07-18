@@ -61,10 +61,10 @@ function getHint(){
 </script>
 
 <main
-  class="min-h-screen bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 flex justify-center items-center flex-col p-6"
+  class="min-h-screen bg-linear-to-lr from-amber-200 via-orange-400 to-red-600 flex justify-center items-center flex-col p-6"
 >
   <h1
-    class="text-6xl font-extrabold text-center m-4 p-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 drop-shadow-lg"
+    class="text-6xl font-extrabold text-center m-4 p-4 text-transparent bg-clip-text bg-linear-to-r from-gray-800 via-blue-700 to-gray-900 drop-shadow-lg"
   >
     <span class="text-black wiggle">🤣</span> Laugh
     <span class="text-white">Out</span>
@@ -72,7 +72,7 @@ function getHint(){
   </h1>
 
   <div
-    class="flex justify-center flex-col p-8 m-4 bg-white/10 backdrop-blur-md w-full max-w-3xl rounded-2xl shadow-2xl border border-white/20 hover:shadow-purple-500/30 transition-all duration-300 transform font-['FingerPaint']"
+    class="flex justify-center flex-col p-8 m-4 bg-black/40 backdrop-blur-md w-full max-w-3xl rounded-2xl shadow-2xl border border-white/20 hover:shadow-purple-500/30 transition-all duration-300 transform font-['Poppins']"
   >
     {#if jokeType === "single"}
       <p class="text-2xl font-bold text-center leading-relaxed">{joke}</p>
@@ -94,7 +94,7 @@ function getHint(){
       Get Another Joke
     </button>
 
-    <p class="text-sm text-white text-center mt-4 italic">
+    <p class="text-sm  text-center mt-4 italic">
       Psst... laughing out loud might unlock something fun. 😉
     </p>
     <button class="mt-6 px-3 py-1 text-sm bg-pink-500/30 hover:bg-pink-600/30 text-white rounded-full shadow w-fit mx-auto transition duration-200 cursor-pointer" on:click={getHint}>Hint</button>
