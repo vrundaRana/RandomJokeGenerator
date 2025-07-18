@@ -61,7 +61,7 @@ function getHint(){
 </script>
 
 <main
-  class="min-h-screen bg-linear-to-lr from-amber-200 via-orange-400 to-red-600 flex justify-center items-center flex-col p-6"
+  class="min-h-screen bg-linear-to-br from-amber-200 via-orange-400 to-red-600 flex justify-center items-center flex-col p-6"
 >
   <h1
     class="text-6xl font-extrabold text-center m-4 p-4 text-transparent bg-clip-text bg-linear-to-r from-gray-800 via-blue-700 to-gray-900 drop-shadow-lg"

@@ -4,7 +4,7 @@
   import Page from './routes/+page.svelte'
 </script>
 
-<main class="min-h-screen bg-linear-to-r from-pink-500 via-red-500 to-orange-500">
+<main class="min-h-screen">
   <Page />
 </main>
 
